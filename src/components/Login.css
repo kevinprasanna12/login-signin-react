@@ -1,0 +1,124 @@
+:root{
+    --background-color:#141414;
+    --font-color:#F6F5F2;
+    --font-color1:#000;
+    --font-color2:#D8D9DA;
+    --accent:#87A922;
+    --major-font:lemon;
+    --base-font:supreme;
+    --hand-font:handdrawn;
+    --head-font:Autor-One;
+  }
+@font-face {
+    font-family: lemon;
+    src: url('../fonts/LEMONMILK-Regular.otf');
+}
+@font-face {
+    font-family: supreme;
+    src: url('../fonts/Supreme-Variable.ttf');
+}
+@font-face {
+    font-family: handdrawn;
+    src: url('../fonts/ArchitectsDaughter.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--base-font);
+}
+.body{
+    background-color: #e5e5f7;
+    opacity: 1;
+    width: 100%;
+    height: 100svh;
+    background-image: repeating-radial-gradient(
+    circle at 0 0,
+    transparent 0,
+    var(--background-color) 4rem
+          ),
+    repeating-linear-gradient(var(--background-color),var(--accent));
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.container{
+    background: var(--font-color);
+    height:auto;
+    width: 30%;
+    padding: 40px 40px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.header{
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+
+.header h1{
+    font-family: var(--major-font);
+}
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input{
+    outline: none;
+    background: transparent;
+    padding-top: 15px;
+}
+input{
+    padding: 14px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--font-color);
+    border: 2px solid var(--accent);
+}
+.redirect{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 0 0;
+}
+.redirect a{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.direct-login{
+    font-size: 14px;
+    padding: 5px 0 0 0;
+}
+.submit-button{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.submit-button button{
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background: var(--background-color);
+    color: var(--font-color);
+    font-size:18px;
+    transition: 150ms linear all;
+    cursor: pointer;
+}
+.submit-button button:hover{
+    background-color: var(--accent);
+    color: var(--background-color);
+}
+.or{
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+.social{
+    padding: 0px 50px 0 50px ;
+    display: flex;
+    justify-content: space-evenly;
+}
